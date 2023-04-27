@@ -10,7 +10,13 @@ interface ButtonType {
 const ButtonBox = styled.button`
   background-color: white;
   border: 1px solid black;
-  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  
+  :hover {
+    background-color: black;
+    color: white;
+  }
 `;
 
 const Button = ({ text, onClick, className }: ButtonType) => {
